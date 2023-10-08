@@ -15,7 +15,7 @@
 body {
   font-family: "Roboto Mono", monospace;
   cursor: cell;
-  background-color: "whitesmoke";
+  background-color: white;
 }
 
 a {
@@ -57,10 +57,11 @@ h4,
 h2 {
   font-size: 18px;
   color: #ffffff;
+  margin: 0;
 }
 
 .h3 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight:900;
 }
 
@@ -72,10 +73,50 @@ h2 {
   font-size: 16px;
 }
 
-#canvas-container {
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire square */
+}
+
+.banner {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.extended-text {
+	transition: 0.3s all ease;
+    display: none;
+    margin-bottom: 0;
+}
+
+.item:hover .extended-text {
+	transition: 0.3s all ease;
+    display: block;
+    color: grey;
+}
+
+.item:hover .banner {
+    height: auto; /* Allow the banner to expand to fit content */
+}
+
+canvas {
+  touch-action: none!important;
+  user-select: none!important;
+}
+
+.canvas-container {
   width: 100%;
   height: 300px;
   align-items: center;
+  z-index:10;
 }
 
 .work-experience-widget {
@@ -121,6 +162,23 @@ h2 {
 
 .work-experience-widget .tab-content.active {
   display: block;
+}
+
+
+#loading-screen {
+	width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	z-index: 2;
+	background-color: #ffffff;
+	opacity: 1;
+ 	transition: 1s opacity;
+}
+
+#loading-screen.fade-out {
+    opacity: 0;
 }
 
 .filters a {
@@ -181,7 +239,6 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s all ease-in-out;
@@ -237,7 +294,7 @@ h2 {
 }
 
 .testimonial-wrap {
-  padding: 50px 50px 80px 50px;
+  padding: 30px;
   background: #eceff2;
 }
 

@@ -54,10 +54,6 @@ function init() {
 
 	//
 
-	texture = new THREE.FramebufferTexture( textureSize, textureSize );
-
-	//
-
 	renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true, canvas:canvas} );
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -107,14 +103,6 @@ function animate() {
 
 	renderer.clear();
 	renderer.render( scene, camera );
-
-	// calculate start position for copying data
-
-	vector.x = ( window.innerWidth * dpr / 2 ) - ( textureSize / 2 );
-	vector.y = ( window.innerHeight * dpr / 2 ) - ( textureSize / 2 );
-
-	renderer.copyFramebufferToTexture( vector, texture );
-
 	renderer.clearDepth();
 
 }
@@ -127,7 +115,7 @@ function updateColors( colorAttribute ) {
 
 		const h = ( ( offset + i ) % l ) / l;
 
-		color.setHSL( h, 1, 0.5 );
+		color.setHSL( h, 0.8, 0.2 );
 		colorAttribute.setX( i, color.r );
 		colorAttribute.setY( i, color.g );
 		colorAttribute.setZ( i, color.b );
@@ -135,7 +123,6 @@ function updateColors( colorAttribute ) {
 	}
 
 	colorAttribute.needsUpdate = true;
-
-	offset -= 25;
+	offset += 25;
 
 }
