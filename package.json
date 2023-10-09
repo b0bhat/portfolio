@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "three": "^0.157.0"
   },
   "devDependencies": {
     "esbuild-wasm": "^0.19.4"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d dist"
   }
 }
