@@ -86,40 +86,40 @@
             <div class="col-md-2 mb-4" data-aos="fade-up">
               <img src="assets/img/5.png" alt="Image" class="img-fluid">
             </div>
-            <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-8 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <h3 class="h3">Panoramic Image Stitching</h3>
-                <p class="mb-2"><span class="text-muted">Computer Vision</span></p>
+                <p class="mb-2 text-muted">Computer Vision</p>
                 <div class="mb-3">
                   <p>An image panoramic stitching program using FAST (Features from Accelerated Segment Test) and RANSAC (RANdom SAmple Consensus), written in MATLAB.</p>
-                <p><a href="#" class="readmore">Github</a></p>
+                <p><a target="_blank" href="https://github.com/b0bhat/panoramic-image-stitch" class="readmore">Github</a></p>
               </div>
             </div>
           </div>
         </div>
         
         <div class="container">
-          <div class="row align-items-stretch">
-            <div class="col-md-6" data-aos="fade-up">
-              <img src="assets/img/img_1_big.jpg" alt="Image" class="img-fluid">
+          <div class="row align-items-stretch" data-aos="fade-up">
+            <div class="col-md-4">
+              <img src="assets/img/panoramic/S4-panorama.png" alt="Image" class="img-fluid mb-4">
             </div>
             <div class="col-md-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <p class="mb-3 text-muted">Process</p>
                 <div class="mb-5">
-                  <p>This program first extracts features using a corner detection method known as FAST. In short, FAST works by evaluating a ring with some radius around a pixel, and contrasting several points on the ring to the center pixel. If enough points are over a certain threshold, the center pixel is marked as a corner.
+                  <p>This program first extracts features using a corner detection method known as <b>FAST</b>.
+                    In short, FAST works by evaluating a ring with some radius around a pixel, and contrasting several points on the ring to the center pixel.
+                    If enough points are over a certain threshold, the center pixel is marked as a corner.
                   <br><br>
-                    With two sets of images and features, Random Sample Consensus is applied with feature matching to evaluate which group of features (corners) are associated in both images. Then a transform is calculated. 
+                    With two sets of images and features, <b>Random Sample Consensus</b> is applied with feature matching to evaluate which group of features (corners) are associated in both images. Then a 2D transform is calculated. 
                     <br><br>
                     A panorama is generated with the estimated length of the full image, and all the images are subqeuntly transformed to give a stitched final result.</p>
 
                 </div>
-
-                <h4 class="h4 mb-3">What I did</h4>
-                <ul class="list-unstyled list-line mb-5">
-                  <li>Design</li>
-                  <li>HTML5/CSS3</li>
-                  <li>CMS</li>
-                  <li>Logo</li>
-                </ul>
             </div>
+            <div data-aos="fade-up" style="display: inline-block;">
+              <img src="assets/img/panoramic/S4-fastR.png" alt="Image" class="img-fluid mb-4" style="max-width: 50%; margin-right:1rem;">
+              <img src="assets/img/panoramic/S4-fastRMatch.png" alt="Image" class="img-fluid mb-4" style="max-width: 50%; margin-right:1rem;">
+            </div>
+            <p><a href="index.html" class="mb-4 readmore">< BACK</a></p>
           </div>
         </div>
 

@@ -111,7 +111,7 @@
             <li>Game Development</li>
           </ul>
         </div>
-        <a class="mt-4 readmore" style="margin-left:1rem;" href="assets/img/resume+.pdf" download>My Resume</a>
+        <a class="mt-4 readmore" style="margin-left:1rem;" target="_blank" href="assets/img/resume+.pdf">My Resume</a>
       </div>
     </section><!-- End About Me Section -->
 
@@ -120,9 +120,9 @@
 	   	  <h3 class="h3 heading">Work Experience</h3>
 	   	  <div class="work-experience-widget">
 			  <div class="tabs">
-			    <button class="readmore active" data-tab="tab1">Rivian</button>
-			    <button class="readmore" data-tab="tab2">NSCS</button>
-			    <button class="readmore" data-tab="tab3">Other</button>
+			    <button class="work-readmore active" data-tab="tab1">Rivian</button>
+			    <button class="work-readmore" data-tab="tab2">NSCS</button>
+			    <button class="work-readmore" data-tab="tab3">Other</button>
 			  </div>
 
 			  <div class="tab-content active mt-3" id="tab1">
@@ -224,7 +224,7 @@
             </a>
           </div>
           <div class="item col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
+            <a href="project_panoramic.html" class="item-wrap fancybox">
               <img class="img-fluid image" src="assets/img/5.png">
               <div class="banner">
 	           <h2 class="title">Panoramic Image Stitching</h2>
@@ -315,7 +315,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script>
-	  const tabButtons = document.querySelectorAll('.readmore');
+	  const tabButtons = document.querySelectorAll('.work-readmore');
 	  const tabContents = document.querySelectorAll('.tab-content');
 
 	  tabButtons.forEach(button => {

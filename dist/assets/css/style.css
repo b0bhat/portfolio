@@ -131,7 +131,7 @@ canvas {
   flex-direction: column;
 }
 
-.work-experience-widget .readmore {
+.work-readmore {
   background-color: #fff;
   border: none;
   padding: 10px 20px;
@@ -148,12 +148,13 @@ canvas {
   border-left: 4px solid #fff;
 }
 
-.work-experience-widget .readmore:hover {
-  background-color: #75989c;
+.work-readmore:hover {
+  background-color: #5e888d;
+  color: #ffffff;
 }
 
-.work-experience-widget .readmore.active {
-  border-left: 4px solid #59c8de;
+.work-readmore.active {
+  border-left: 4px solid #85c5d3;
 }
 
 .work-experience-widget .tab-content {
