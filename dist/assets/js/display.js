@@ -66,8 +66,13 @@ function init() {
 		scene.add( rectlights[i] );
 		scene.add( rectlighthelpers[i] );
 	}
+	const rectLight = new THREE.RectAreaLight(0xd9234d, 20, 2000, 1);
+	rectLight.position.set( 0, 9, 500 );
+	const rectlighthelper = new RectAreaLightHelper( rectLight );
+	scene.add( rectLight );
+	scene.add( rectlighthelper );
 
-	const geoFloor = new THREE.BoxGeometry( 2000, 0.1, 2000 );
+	const geoFloor = new THREE.BoxGeometry( 2000, 0.1, 3000 );
 	const matStdFloor = new THREE.MeshStandardMaterial( { color: 0xffffff, roughness: 0.2, metalness: 0 } );
 	const mshStdFloor = new THREE.Mesh( geoFloor, matStdFloor );
 	mshStdFloor.position.set(0, 11, 0);

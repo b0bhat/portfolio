@@ -37,265 +37,196 @@
 
 <body>
 
-  <!--
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6 d-none d-md-block  mr-auto">
-          <div class="tweet d-flex">
-            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
-            <div>
-              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Hire Me</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
-        </div>
-      </div>
-
-    </div>
-  </div> -->
-
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">RYAN WU</a>
       <div class="col-md-12 col-lg-6 mb-lg-0">
-        <p>Software Engineer &amp; Computer Science Student
+        <p>Software Engineering &amp; Computer Science Student
         <br><span style="color: red;">Bachelor of Applied Science @ SFU</span>
         </p>
       </div>
-      <!-- <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"> -->
         <span></span>
     </div>
   </nav>
 
-   <section class="section m-0">
-    	<div class="container" style="position:relative;">
+  <section class="section m-0">
+    <div class="container" style="position:relative;">
 
-    		<div class="canvas-container" id="canvas-container"></div>
-    	</div>
-    </section>
+      <div class="canvas-container" id="canvas-container"></div>
+    </div>
+  </section>
 
-   <canvas id="canvas-background" style="width: 100vw;
-	  height: 100vh;
-	  display: block;
-	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  z-index: -9999;"
+  <canvas id="canvas-background" style="width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;"
   ></canvas>
 
-  <!-- ======= About Me Section ======= -->
-    <section class="section">
-      <div class="container" data-aos="fade-up" data-aos-delay="0" data-aos-duration=500>
-        <div>
-          <h3 class="h3 heading">[~]$ whoami</h3>
-          <p style="color:red";>I'm a student who loves to learn about the world, create meaningful and practical designs, and solve problems through code. [WIP]</p>
-          <p>Fields of study that I'm passionate about include:</p>
-          <ul>
-            <li>Software Engineering</li>
-            <li>Data Science</li>
-            <li>Computer Vision</li>
-            <li>Machine Learning</li>
-            <li>Game Development</li>
-          </ul>
-        </div>
-        <a class="mt-4 readmore" style="margin-left:1rem;" target="_blank" href="assets/img/resume+.pdf">My Resume</a>
-      </div>
-    </section><!-- End About Me Section -->
-
-    <section class="section">
-	   	<div class="container" data-aos="fade-up" data-aos-offset=0 data-aos-delay="50" data-aos-duration=600>
-	   	  <h3 class="h3 heading">Work Experience</h3>
-	   	  <div class="work-experience-widget">
-			  <div class="tabs">
-			    <button class="work-readmore active" data-tab="tab1">Rivian</button>
-			    <button class="work-readmore" data-tab="tab2">NSCS</button>
-			    <button class="work-readmore" data-tab="tab3">Other</button>
-			  </div>
-
-			  <div class="tab-content active mt-3" id="tab1">
-			    <h4 class="bi bi-file-earmark-code h4 mb-2"> <a>Software Engineer <a target="_blank" href="http://rivian.com"><span style="text-decoration:underline; color: orange;">@ Rivian Automotive Inc.</span></a></a></h4>
-			    <h5 class="h5"><i>Co-op Internship</i></h5>
-            	<ul>
-            		<li>Developed and integrated cloud, vehicle, and mobile systems</li>
-            		<li>Worked with a multitude of industry practices, technologies, and projects</li>
-            		<li>Collaborated with teams across the company to contribute to monthly releases</li>
-            	</ul>
-			  </div>
-
-			  <div class="tab-content mt-3" id="tab2">
-				<h4 class="bi bi-window h4 mb-2"> <a>Full-stack Developer <span style="color: darkseagreen;">@ New Step Consultation Services Inc.<span></span></a></h4>
-	            <h5 class="h5"><i>Payroll / Employee / Work - HR Management System</i></h5>
-	            <ul>
-	            	<li>Java backend with Spring Boot hosted on Heroku</li>
-	            	<li>Powered by a PostgreSQL database</li>
-	            	<li>HTML/CSS/JS Frontend</li>
-	            </ul>
-			  </div>
-
-			  <div class="tab-content mt-3" id="tab3">
-			    <h4 class="bi bi-book h4 mb-2"> <a>Math and English Tutor <span style="color: coral;">@ Kumon & Independent</span></a></h4>
-
-	            <h4 class="bi bi-shop h4 mb-2"> <a>Retail <span style="color: darkkhaki;">@ The Adventure Zone</span></a></h4>
-
-	            <h4 class="bi bi-clipboard2-data h4 mb-2"> <a>Camp Leader / Planner <span style="color: cornflowerblue;">@ Koinonia Evangelical Church</span></a></h4>
-			  </div>
-		  </div>
-		</div>
-    </section>
-
-  <!-- ======= Services Section =======
-    <section class="section services">
-      <div class="container" data-aos="fade-up" data-aos-delay="200">
-        <div class="row">
-          <h3 class="h3 heading">Work Experience</h3>
-
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-            <h4 class="bi bi-file-earmark-code h4 mb-2"> <a>Software Engineer Co-op</a></h4>
-            <h5 class="h5"><i>Rivian Automotive, Inc.</i></h5>
-            <ul><li>TODO quick overview</li></ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-            <h4 class="bi bi-window h4 mb-2"> <a>Full-stack Developer</a></h4>
-            <h5 class="h5"><i>New Step Consultation Services</i></h5>
-            <ul><li>TODO quick overview</li></ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-            <h4 class="bi bi-book h4 mb-2"> <a>Tutor</a></h4>
-            <h5 class="h5"><i>Kumon and independent</i></h5>
-            <ul><li>TODO quick overview</li></ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="section site-portfolio">
-      <div class="container" data-aos="fade-up" data-aos-offset=0 data-aos-delay="100" data-aos-duration=700>
-        <div class="row mb-3 align-items-center">
-        <h3 class="h3 heading">Projects [WIP]</h3>
-        </div>
-        <div id="portfolio-grid" class="row no-gutter">
-          <div class="item web col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/1_2.png">
-              <div class="banner">
-	           <h2 class="title">HR Management System</h2>
-	           <p class="extended-text">New Step Consultation Services</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item photography col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/2.png">
-              <div class="banner">
-	           <h2 class="title">Project Workload System</h2>
-	           <p class="extended-text">BGC Engineering</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/3_1.png">
-              <div class="banner">
-	           <h2 class="title">Quo Vadis, Sharpness?</h2>
-	           <p class="extended-text">Optimization in Machine Learning</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item design col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid image" src="assets/img/4.png">
-              <div class="banner">
-	           <h2 class="title">Quantum Bayesian Networks</h2>
-	           <p class="extended-text">Quantum Computing</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="project_panoramic.html" class="item-wrap fancybox">
-              <img class="img-fluid image" src="assets/img/5.png">
-              <div class="banner">
-	           <h2 class="title">Panoramic Image Stitching</h2>
-	           <p class="extended-text">Computer Vision</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/6.png">
-              <div class="banner">
-	           <h2 class="title">Intoxication Detection</h2>
-	           <p class="extended-text">Computer Vision</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/7.png">
-              <div class="banner">
-	           <h2 class="title">Game Development/Modding</h2>
-	           <p class="extended-text">Independent Projects</p>
-	       	  </div>
-            </a>
-          </div>
-          <div class="item branding col-sm-6 col-md-3 col-lg-3 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <img class="img-fluid" src="assets/img/1.jpg">
-              <div class="banner">
-	           <h2 class="title">[WIP]</h2>
-	           <p class="extended-text">WIP</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section pt-0">
-      <div class="container" data-aos="fade-up" data-aos-offset=0 data-aos-delay="100">
+<!-- ======= About Me Section ======= -->
+  <section class="section">
+    <div class="container" data-aos="fade-up" data-aos-delay="0" data-aos-duration=500>
       <div>
-          <h3 class="h3 heading">Skills</h3>
-          <p>I'll take this opportunity to talk about my favorite languages:</p>
-          <span style="color: tomato;">> JAVA and C#:</span>
-          <ul>
-          <li>Java is a great place to learn OOP fundamentals and develop code which is compatible across many platforms and services.
-          For many applications, memory management is also less of a concern.</li>
-          </ul>
-          <span style="color: tomato;">> Python:</span>
-          <ul>
-          <li>Incredibly easy to teach and with thousands of powerful libraries, I started programming with Python on a Raspberry Pi a decade ago.
-          It's not the fastest or most efficient language by far, but its ubiquitous and accessible usage means
-          you can do anything from drafting a simple script to data analysis while focusing on design and implementation.</li>
-          </ul>
-          <br>
-          <p>Although the languages above are my strengths, I've also used some other languages across different projects and courses.</p>
-          <p>In loose order of familiarity:</p>
-          <ul>
-          	<li>C and C++</li>
-          	<li>SQL</li>
-          	<li>MATLAB</li>
-          	<li>Javascript</li>
-          	<li>Go</li>
-          	<li>Assembly</li>
-            <li>Lisp</li>
-            <li>Haskell</li>
-            <li>Lua</li>
-          </ul>
-        </div>
-
+        <h3 class="h3 heading">[~]$ whoami</h3>
+        <p style="color:red";>I'm a student who loves to learn about the world, create meaningful and practical designs, and solve problems.</p>
+        <p>Fields of study that I'm passionate about include:</p>
+        <ul>
+          <li>Software Engineering</li>
+          <li>Data Science</li>
+          <li>Computer Vision</li>
+          <li>Machine Learning</li>
+        </ul>
       </div>
-    </section>
+      <a class="mt-4 readmore" style="margin-left:1rem;" target="_blank" href="assets/img/resume+.pdf">My Resume</a>
+    </div>
+  </section><!-- End About Me Section -->
+
+  <section class="section">
+    <div class="container" data-aos="fade-up" data-aos-offset=0 data-aos-delay="50" data-aos-duration=600>
+      <h3 class="h3 heading">Work Experience</h3>
+      <div class="work-experience-widget">
+      <div class="tabs">
+        <button class="work-readmore active" data-tab="tab1">Rivian</button>
+        <button class="work-readmore" data-tab="tab2">NSCS</button>
+        <button class="work-readmore" data-tab="tab3">Other</button>
+      </div>
+
+      <div class="tab-content active mt-3" id="tab1">
+        <h4 class="bi bi-file-earmark-code h4 mb-2"> <a>Software Engineer <a target="_blank" href="http://rivian.com"><span style="text-decoration:underline; color: orange;">@ Rivian Automotive Inc.</span></a></a></h4>
+        <h5 class="h5"><i>Co-op Internship</i></h5>
+            <ul>
+              <li>Developed and integrated cloud, vehicle, and mobile systems</li>
+              <li>Worked with a multitude of industry practices, technologies, and projects</li>
+              <li>Collaborated with teams across the company to contribute to monthly releases</li>
+            </ul>
+      </div>
+
+      <div class="tab-content mt-3" id="tab2">
+      <h4 class="bi bi-window h4 mb-2"> <a>Full-stack Developer <span style="color: darkseagreen;">@ New Step Consultation Services Inc.<span></span></a></h4>
+            <h5 class="h5"><i>Payroll / Employee / Work - HR Management System</i></h5>
+            <ul>
+              <li>Java backend with Spring Boot hosted on Heroku</li>
+              <li>Powered by a PostgreSQL database</li>
+              <li>HTML/CSS/JS Frontend</li>
+            </ul>
+      </div>
+
+      <div class="tab-content mt-3" id="tab3">
+        <h4 class="bi bi-book h4 mb-2"> <a>Math and English Tutor <span style="color: coral;">@ Kumon & Independent</span></a></h4>
+
+            <h4 class="bi bi-shop h4 mb-2"> <a>Retail <span style="color: darkkhaki;">@ The Adventure Zone</span></a></h4>
+
+            <h4 class="bi bi-clipboard2-data h4 mb-2"> <a>Camp Leader / Planner <span style="color: cornflowerblue;">@ Koinonia Evangelical Church</span></a></h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="section site-portfolio">
+    <div class="container" data-aos="fade-up" data-aos-offset=0 data-aos-duration=700>
+      <h3 class="h3 heading mb-4">Projects</h3>
+
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/1_3.png">
+          <h4 class="h4" style="margin-bottom:2px">HR Management System</h4>
+          <h5 class="h5"><i>New Step Consultation Services</i></h5>
+          <p>Payroll and employee management system with admin tools.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/3_2.png">
+          <h4 class="h4" style="margin-bottom:2px">Quo Vadis, Sharpness?</h4>
+          <h5 class="h5"><i>Research - Machine Learning</i></h5>
+          <p>Analysis and further work on the behavior of progressive sharpness and edge of stability in gradient descent when training neural networks.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/4.png">
+            <h4 class="h4" style="margin-bottom:2px">Quantum Bayesian Networks</h4>
+            <h5 class="h5"><i>Project - Quantum Computing</i></h5>
+            <p>Efficient implementation of Bayesian networks as quantum circuits for probabilistic modeling.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/5.png">
+          <h4 class="h4" style="margin-bottom:2px">Panoramic Image Stitching</h4>
+          <h5 class="h5"><i>Project - Computer Vision</i></h5>
+          <p>Image panoramic stitching program using FAST and RANSAC techniques.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/6.png">
+          <h4 class="h4" style="margin-bottom:2px">Face Intoxication Detection</h4>
+          <h5 class="h5"><i>Project - Computer Vision</i></h5>
+          <p>Multimodal approach to intoxication detection by analyzing facial and audio data.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/7.png">
+          <h4 class="h4" style="margin-bottom:2px">Game Development and Modding</h4>
+          <h5 class="h5"><i>Projects</i></h5>
+          <p>Several game development and modding projects across different languages.</p>
+        </div>
+      </a>
+      
+      <a class="project-link" href="">
+        <div class="project-item">
+          <img class="small_image" src="assets/img/2.png">
+          <h4 class="h4" style="margin-bottom:2px">Project Workload System</h4>
+          <h5 class="h5"><i>BGC Engineering</i></h5>
+          <p>Project/employee workload system.</p>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container" data-aos="fade-up" data-aos-offset=-200 data-aos-duration=700>
+    <div>
+        <h3 class="h3 heading">Skills</h3>
+        <p>I'll take this opportunity to talk about my favorite languages:</p>
+        <span style="color: tomato;">> JAVA and C#:</span>
+        <ul>
+        <li>Java is a great place to learn OOP fundamentals and develop code which is compatible across many platforms and services.
+        For many applications, memory management is also less of a concern.</li>
+        </ul>
+        <span style="color: tomato;">> Python:</span>
+        <ul>
+        <li>Incredibly easy to teach and with thousands of powerful libraries, I started programming with Python on a Raspberry Pi a decade ago.
+        It's not the fastest or most efficient language by far, but its ubiquitous and accessible usage means
+        you can do anything from drafting a simple script to data analysis while focusing on design and implementation.</li>
+        </ul>
+        <br>
+        <p>Although the languages above are my strengths, I've also used some other languages across different projects and courses.</p>
+        <p>In loose order of familiarity:</p>
+        <ul>
+          <li>C and C++</li>
+          <li>SQL</li>
+          <li>MATLAB</li>
+          <li>Javascript</li>
+          <li>Go</li>
+          <li>Assembly</li>
+          <li>Lisp</li>
+          <li>Haskell</li>
+          <li>Lua</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
