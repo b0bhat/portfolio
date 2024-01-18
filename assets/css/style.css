@@ -1,20 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
-/**
-* Template Name: MyPortfolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Roboto Mono", monospace;
-  cursor: cell;
+  font-size: 15px;
+  /** cursor: cell; **/
   background-color: white;
 }
 
@@ -24,12 +18,12 @@ a {
 }
 
 p {
-  color: #076d7a;
+  color: #06505a;
   margin-bottom: 0.5rem;
 }
 
 li {
-  color: #5da3a1;
+  color: #468381;
 }
 
 ul {
@@ -55,28 +49,46 @@ h4,
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   margin: 0;
 }
 
 .h3 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight:900;
 }
 
 .h4 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensure the image covers the entire square */
+}
+
+.img-fluid {
+  min-width: 150px;
+}
+
+.small_image {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed #85c5d3;
+  float: left;
+  margin-right: 15px;
+}
+
+.project-link:hover .small_image,
+.project-link:hover .small_image:hover {
+  border: 3px solid #4488a6;
 }
 
 .banner {
@@ -100,8 +112,9 @@ h2 {
 
 .item:hover .extended-text {
 	transition: 0.3s all ease;
-    display: block;
-    color: grey;
+  display: block;
+  color: grey;
+    
 }
 
 .item:hover .banner {
@@ -115,7 +128,7 @@ canvas {
 
 .canvas-container {
   width: 100%;
-  height: 300px;
+  height: 200px;
   align-items: center;
   z-index:10;
 }
@@ -131,7 +144,7 @@ canvas {
   flex-direction: column;
 }
 
-.work-experience-widget .readmore {
+.work-readmore {
   background-color: #fff;
   border: none;
   padding: 10px 20px;
@@ -148,12 +161,13 @@ canvas {
   border-left: 4px solid #fff;
 }
 
-.work-experience-widget .readmore:hover {
-  background-color: #75989c;
+.work-readmore:hover {
+  background-color: #5e888d;
+  color: #ffffff;
 }
 
-.work-experience-widget .readmore.active {
-  border-left: 4px solid #59c8de;
+.work-readmore.active {
+  border-left: 4px solid #85c5d3;
 }
 
 .work-experience-widget .tab-content {
@@ -165,6 +179,16 @@ canvas {
   display: block;
 }
 
+.project-item {
+  margin-bottom:20px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.project-item:hover {
+  background-color: #ddedf0;
+}
 
 #loading-screen {
 	width: 100%;
