@@ -66,7 +66,7 @@ function init() {
 		scene.add( rectlights[i] );
 		scene.add( rectlighthelpers[i] );
 	}
-	const rectLight = new THREE.RectAreaLight(0xd9234d, 20, 2000, 1);
+	const rectLight = new THREE.RectAreaLight(0xd9234d, 30, 3000, 1);
 	rectLight.position.set( 0, 9, 500 );
 	const rectlighthelper = new RectAreaLightHelper( rectLight );
 	scene.add( rectLight );
@@ -145,7 +145,7 @@ function onPointerMove( event ) {
 	
 	if (event.clientY > container.clientHeight) mouseY = (container.clientHeight - windowHalfY)/100;
 	else mouseY = (event.clientY - windowHalfY)/300;
-	mouseX = (event.clientX - windowHalfX)/100;
+	mouseX = ((event.clientX - windowHalfX) - 100) /200;
 
 }
 
