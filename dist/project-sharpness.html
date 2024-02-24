@@ -71,12 +71,14 @@
               <h4>Process</h4>
                 <div class="mb-5">
                   <p>
-                  Traditional gradient descent analyses in optimization theory link the optimal learning rate η for neural network
-                  training to the largest eigenvalue of the Hessian matrix, also know as the sharpness. Recent work by [Cohen et al. 2021] reveals two phenomena:
-                  Progressive Sharpening, where sharpness increases until reaching the instability cutoff 2/η, and Edge of Stability,
-                  where sharpness stabilizes at 2/η while training loss continues to decrease.
+                  In this study, research on the behavior of sharpness and edge of stability was conducted on gradient descent.
                   <br><br>
-                  An empirical study is conducted encompassing potential aspects which may have a relationship these two behaviors:
+                  Gradient descent is a key algorithm in the optimization of machine learning models and neural networks. Traditionally, optimization theory links the optimal 
+                  learning rate η to the largest eigenvalue in the Hessian matrix of the weights, also know as the sharpness. <br><br>Recent work by [Cohen et al. 2021] reveals two phenomena:
+                  Progressive Sharpening, where sharpness increases monotonically until reaching the instability cutoff 2/η, and Edge of Stability,
+                  where sharpness stabilizes at 2/η while training loss continues to decrease. However, the mechanisms behind these two new behaviors is still not well understood.
+                  <br><br>
+                  We conducted an empirical study on further unexplored aspects of these behaviors:
                   </p>
                   <ul>
                     <li>Development and validation of a hypothesis behind progressive sharpening</li>
@@ -88,7 +90,8 @@
                   </ul>
                   <br>
                   <p>
-                    Our hypothesis suggests a correlation between weight changes and sharpness changes. Our experiments consistently show weights following the trajectory of sharpness, persisting across various experiments and parameters. Notably, as sharpness oscillates post-Edge of Stability, we observe corresponding oscillations in weights.
+                    Our hypothesis suggests a correlation between changes in the weights and sharpness. Our experiments consistently show weights following the trajectory of the sharpness,
+                    persisting across various experiments and parameters. Notably, as sharpness oscillates post-Edge of Stability, we observe corresponding oscillations in the weights.
                   </p>
 
                 </div>
