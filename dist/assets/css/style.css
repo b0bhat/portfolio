@@ -33,6 +33,8 @@ ul {
 .section {
   margin-top:0rem;
   margin-bottom:5rem;
+  margin-left:20rem;
+  margin-right:20rem;
 }
 
 a:hover {
