@@ -17,6 +17,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #000;
+}
+
+a[href=""]:not(.navbar-brand) {
+  color: rgb(155, 155, 155); /* Set color to red */
+}
+
 p {
   color: #06505a;
   margin-bottom: 0.5rem;
@@ -37,9 +45,6 @@ ul {
   margin-right:22%;
 }
 
-a:hover {
-  color: #000;
-}
 
 h1,
 h2,
@@ -86,6 +91,11 @@ h2 {
   border: 3px dashed #85c5d3;
   float: left;
   margin-right: 15px;
+}
+
+.link {
+  color: #0077cc;
+  text-decoration: underline;
 }
 
 .project-link:hover .small_image,

@@ -12,7 +12,7 @@ import { GlitchPass } from 'three/addons/postprocessing/GlitchPass.js';
 let renderer, scene, camera, composer;
 let stats, meshKnot, shape;
 const container = document.getElementById('canvas-container');
-let mouseX = 0, mouseY = 0;
+let mouseX = 0, mouseY = 0, mouseXmod=0;
 
 let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
@@ -191,12 +191,13 @@ function onPointerMove( event ) {
 	
 	if (event.clientY > container.clientHeight) mouseY = (container.clientHeight - windowHalfY)/100;
 	else mouseY = (event.clientY - windowHalfY)/300;
-	mouseX = ((event.clientX - windowHalfX) - 100) /100;
-
+	mouseX = event.clientX - windowHalfX;
+	let sigm = 1/(1 + Math.exp(-Math.abs(mouseX/windowHalfX)));
+	mouseXmod = mouseX/50 * sigm;
 }
 
 function animation( time ) {
-	camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+	camera.position.x += ( mouseX/200 - camera.position.x ) * 0.05;
 	camera.position.y += ( 5 -  - camera.position.y ) * 0;
 	if (fish) {
 		camera.lookAt(fish.position);
@@ -207,7 +208,7 @@ function animation( time ) {
 	renderer.render( scene, camera );
 	composer.render();
 	circlelights.forEach(light => {
-		light.lookAt(-mouseX, 5, -2);
+		light.lookAt(-mouseXmod, 5, -2);
 	});
 
 }
