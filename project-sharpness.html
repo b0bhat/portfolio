@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Ryan Wu - Panoramic Image Stitching</title>
+  <title>Ryan Wu - Project</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -31,7 +31,7 @@
 
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">RYAN WU</a>
+      <a class="navbar-brand" href="/dist/">RYAN WU</a>
       <div class="col-md-12 col-lg-6 mb-lg-0">
         <p>Software Engineering &amp; Computer Science Student
         <br><span style="color: red;">Bachelor of Applied Science @ SFU</span>
@@ -71,12 +71,14 @@
               <h4>Process</h4>
                 <div class="mb-5">
                   <p>
-                  Traditional gradient descent analyses in optimization theory link the optimal learning rate η for neural network
-                  training to the largest eigenvalue of the Hessian matrix, also know as the sharpness. Recent work by [Cohen et al. 2021] reveals two phenomena:
-                  Progressive Sharpening, where sharpness increases until reaching the instability cutoff 2/η, and Edge of Stability,
-                  where sharpness stabilizes at 2/η while training loss continues to decrease.
+                  In this study, research on the behavior of sharpness and edge of stability was conducted on gradient descent.
                   <br><br>
-                  An empirical study is conducted encompassing potential aspects which may have a relationship these two behaviors:
+                  Gradient descent is a key algorithm in the optimization of machine learning models and neural networks. Traditionally, optimization theory links the optimal 
+                  learning rate η to the largest eigenvalue in the Hessian matrix of the weights, also know as the sharpness. <br><br>Recent work by [Cohen et al. 2021] reveals two phenomena:
+                  Progressive Sharpening, where sharpness increases monotonically until reaching the instability cutoff 2/η, and Edge of Stability,
+                  where sharpness stabilizes at 2/η while training loss continues to decrease. However, the mechanisms behind these two new behaviors is still not well understood.
+                  <br><br>
+                  We conducted an empirical study on further unexplored aspects of these behaviors:
                   </p>
                   <ul>
                     <li>Development and validation of a hypothesis behind progressive sharpening</li>
@@ -88,7 +90,8 @@
                   </ul>
                   <br>
                   <p>
-                    Our hypothesis suggests a correlation between weight changes and sharpness changes. Our experiments consistently show weights following the trajectory of sharpness, persisting across various experiments and parameters. Notably, as sharpness oscillates post-Edge of Stability, we observe corresponding oscillations in weights.
+                    Our hypothesis suggests a correlation between changes in the weights and sharpness. Our experiments consistently show weights following the trajectory of the sharpness,
+                    persisting across various experiments and parameters. Notably, as sharpness oscillates post-Edge of Stability, we observe corresponding oscillations in the weights.
                   </p>
 
                 </div>
@@ -97,7 +100,7 @@
               <img src="assets/img/sharpness/loss.png" alt="Image" class="img-fluid mb-4" style="max-width: 50%; margin-right:1rem;">
               <img src="assets/img/sharpness/gd_overview.png" alt="Image" class="img-fluid mb-4" style="max-width: 50%; margin-right:1rem;">
             </div>
-            <p><a href="index.html" class="mb-4 readmore">< BACK</a></p>
+            <p><a href="/dist/" class="mb-4 readmore">< BACK</a></p>
           </div>
         </div>
 
