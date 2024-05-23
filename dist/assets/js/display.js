@@ -96,14 +96,14 @@ function init() {
 	//scene.add( meshKnot );
 	
 	const geoPyramid = new THREE.CylinderGeometry(0, 4, 4, 4, 1);
-	const matShape = new THREE.MeshStandardMaterial( { color: 0xffffff, roughness: 0, metalness: 0.2 } );
+	const matShape = new THREE.MeshStandardMaterial( { color: 0xffffff, roughness: 0, metalness: 0.2} );
 	shape = new THREE.Mesh( geoPyramid, matShape );
 	shape.rotation.x = -Math.PI/8;
 	shape.position.set( 0, 6, 3 );
 	scene.add( shape );
 	
 	const outerCircleShape = new THREE.Shape().absarc(0, 0, 5.5, 0, Math.PI * 2);
-	const innerCircleHole = new THREE.Path().absarc(0, 0, 4, 0, Math.PI * 2);
+	const innerCircleHole = new THREE.Path().absarc(0, 0, 4.2, 0, Math.PI * 2);
 	outerCircleShape.holes.push(innerCircleHole);
 
 	const geometry = new THREE.ExtrudeGeometry(outerCircleShape, {
@@ -116,21 +116,45 @@ function init() {
 	circleWithHole.position.set(0,5,0)
 	scene.add(circleWithHole);
 
-	const circleRadius = 5;
-	const numLights = 30;
-	const angleStep = (2 * Math.PI) / numLights;
+	const circleRadius = 4.8;
+	const numLights = 4;
 
-	for (let i = 0; i < numLights; i++) {
+	// for (let i = 0; i < numLights; i++) {
+	// 	const angleStep = (2 * Math.PI) / numLights;
+	// 	const angle = i * angleStep;
+
+	// 	const light = new THREE.RectAreaLight(0xd9234d, 30, 0.8, 0.8);
+	// 	light.position.set(circleRadius * Math.cos(angle), circleRadius * Math.sin(angle) + 5, -2);
+	// 	light.lookAt(0, 5, -2);
+
+	// 	circlelights[i] = light;
+	// 	scene.add(circlelights[i]);
+	// }
+	for (let i = 0; i < 20; i++) {
+		const angleStep = (2 * Math.PI) / 20;
 		const angle = i * angleStep;
 
-		const light = new THREE.RectAreaLight(0xd9234d, 3, 0.8, 0.8);
+		const geometry = new THREE.BoxGeometry(0.8, 0.8, 0);
+		const material = new THREE.MeshBasicMaterial({ color: 0xd9234d });
+		const light = new THREE.Mesh(geometry, material);
+		light.position.set((circleRadius-0.6) * Math.cos(angle), (circleRadius-0.6) * Math.sin(angle) + 5, -2);
+		light.lookAt(0, 5, -2);
+
+		circlelights.push(light);
+		scene.add(light);
+	}
+	for (let i = 0; i < 20; i++) {
+		const angleStep = (2 * Math.PI) / 20;
+		const angle = i * angleStep;
+
+		const geometry = new THREE.BoxGeometry(0.8, 0.8, 0.1);
+		const material = new THREE.MeshBasicMaterial({ color: 0xd9234d });
+		const light = new THREE.Mesh(geometry, material);
 		light.position.set(circleRadius * Math.cos(angle), circleRadius * Math.sin(angle) + 5, -2);
 		light.lookAt(0, 5, -2);
 
+		circlelights.push(light);
 		scene.add(light);
-		circlelights[i] = light;
-		const lightHelper = new RectAreaLightHelper(light);
-		scene.add(lightHelper);
 	}
 
 	composer = new EffectComposer(renderer);
