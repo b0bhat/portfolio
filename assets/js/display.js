@@ -130,8 +130,8 @@ function init() {
 	// 	circlelights[i] = light;
 	// 	scene.add(circlelights[i]);
 	// }
-	for (let i = 0; i < 20; i++) {
-		const angleStep = (2 * Math.PI) / 20;
+	for (let i = 0; i < 30; i++) {
+		const angleStep = (2 * Math.PI) / 30;
 		const angle = i * angleStep;
 
 		const geometry = new THREE.BoxGeometry(0.8, 0.8, 0);
@@ -143,11 +143,11 @@ function init() {
 		circlelights.push(light);
 		scene.add(light);
 	}
-	for (let i = 0; i < 20; i++) {
-		const angleStep = (2 * Math.PI) / 20;
+	for (let i = 0; i < 50; i++) {
+		const angleStep = (2 * Math.PI) / 50;
 		const angle = i * angleStep;
 
-		const geometry = new THREE.BoxGeometry(0.8, 0.8, 0.1);
+		const geometry = new THREE.BoxGeometry(0.8, 0.5, 0.1);
 		const material = new THREE.MeshBasicMaterial({ color: 0xd9234d });
 		const light = new THREE.Mesh(geometry, material);
 		light.position.set(circleRadius * Math.cos(angle), circleRadius * Math.sin(angle) + 5, -2);
